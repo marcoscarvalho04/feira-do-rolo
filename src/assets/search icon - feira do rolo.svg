@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.703" height="106.75" viewBox="0 0 103.703 106.75">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_4" data-name="Caminho 4" d="M.047,0h103.7V106.75H.047Zm0,0" transform="translate(-0.047)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_6" data-name="Caminho 6" d="M29.609,14.574H79V64H29.609Zm0,0" transform="translate(-29.609 -14.574)"/>
+    </clipPath>
+  </defs>
+  <g id="search_icon_-_feira_do_rolo" data-name="search icon - feira do rolo" transform="translate(-0.047)">
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(0.047)" clip-path="url(#clip-path)">
+      <path id="Caminho_1" data-name="Caminho 1" d="M.047,0H103.989V116.168H.047Zm0,0" transform="translate(-0.047)" fill="#fff"/>
+      <path id="Caminho_2" data-name="Caminho 2" d="M.047,0H103.989V106.994H.047Zm0,0" transform="translate(-0.047)" fill="#fff"/>
+      <path id="Caminho_3" data-name="Caminho 3" d="M.047,0H103.989V106.994H.047Zm0,0" transform="translate(-0.047)" fill="#04c9e3"/>
+    </g>
+    <g id="Grupo_2" data-name="Grupo 2" transform="translate(27.254 28.735)" clip-path="url(#clip-path-2)">
+      <path id="Caminho_5" data-name="Caminho 5" d="M61.4,50.738,73.512,62.848A3.073,3.073,0,0,0,77.855,58.5L65.75,46.4A20.012,20.012,0,1,0,61.4,50.738ZM49.625,20.723A13.852,13.852,0,1,1,35.773,34.574,13.859,13.859,0,0,1,49.625,20.723Zm0,0" transform="translate(-29.609 -14.574)" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
