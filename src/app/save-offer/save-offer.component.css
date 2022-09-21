@@ -1,0 +1,52 @@
+.form-cadastrar {
+  margin-top: 5em;
+  margin-left: 15em;
+}
+
+.form-group{
+  margin-top: 2em;
+}
+
+.label{
+  font-family: 'Roboto', Courier, Arial;
+  font-size: 1em;
+}
+
+.input{
+  margin-left: 1.25em;
+  width: 15em;
+  font-family: 'Roboto', Courier, Arial;
+}
+
+.input:hover{
+  border: 1px solid #04c9e3;
+}
+
+.descricao-produto{
+  margin-left: 1.3em;
+  font-family: 'Roboto', Courier, Arial;
+}
+
+.descricao-produto:hover{
+  border: 1px solid #04c9e3;
+}
+
+.btn{
+  font-family: 'Roboto', Courier, Arial;
+  margin-left: 1em;
+  float: right;
+  margin-top: 4em;
+  height: 2em;
+  border: 0px solid #fff;
+
+}
+.btn-confirmar{
+  background-color: #38E5FC;
+}
+
+
+.btn-confirmar:hover{
+  background-color: #04abc1;
+}
+
+

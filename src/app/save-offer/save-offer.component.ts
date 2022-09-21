@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Offers } from '../model/offers';
+import { ActivatedRoute } from '@angular/router';
+import { OffersService } from '../services/offers.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-save-offer',
@@ -7,9 +12,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaveOfferComponent implements OnInit {
 
-  constructor() { }
+  offer: Offers
+  constructor(private route: ActivatedRoute, private router: Router, private offerService: OffersService) {
+    this.offer = new Offers();
+  }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    console.log(this.offer)
+    this.offerService.save(this.offer).subscribe(result => this.goToIndex())
+  }
+
+  goToIndex(){
+    this.router.navigate([''])
   }
 
 }

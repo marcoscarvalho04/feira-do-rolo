@@ -64,7 +64,6 @@ func (s OfertaController) Save(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(msg))
 		return
 	}
-
 	offerResult, err := Service.Save(*offerToSave)
 	if err != nil {
 		msg := fmt.Sprintf("error saving new offer: %s", err.Error())

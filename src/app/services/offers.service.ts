@@ -23,8 +23,8 @@ export class OffersService {
 
    }
 
-   public save(offer: Offers) {
-    this.http.post<Offers>(this.offersApi, offer)
+   public save(offer: Offers): Observable<Offers> {
+    return this.http.post<Offers>(this.offersApi, offer)
     .pipe(
       retry(5)
     )
