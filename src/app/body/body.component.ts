@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Offers } from '../model/offers';
+import { OffersService } from '../services/offers.service';
+
+
 
 @Component({
   selector: 'app-body',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  offers: Offers[] = [];
+
+  constructor(private offersService:OffersService) { }
 
   ngOnInit(): void {
+    this.offersService.findAll().subscribe(data => {
+      this.offers = data
+    })
   }
 
 }

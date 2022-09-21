@@ -79,9 +79,9 @@
 <div class="container ">
   <div class="grid-4 destaques">
     <div class="grid-4 section-nova-oferta">
-      <button class="btn-nova-oferta"> <span class="nova-oferta"> Nova Oferta </span>
-        <span class="btn-add"><img src="../../assets/add-btn.svg" /></span>
-      </button>
+      <a routerLink="/save-offer"><button class="btn-nova-oferta"> <span class="nova-oferta"> Nova Oferta </span>
+          <span class="btn-add"><img src="../../assets/add-btn.svg" /></span>
+        </button></a>
     </div>
     <div class="section-ofertas-pub">
       <div class="grid-3 painel-ofertas">
@@ -95,27 +95,20 @@
       </div>
     </div>
   </div>
-  <div class="grid-12 ofertas">
+  <div class="grid-12 ofertas" *ngFor="let offer of offers">
     <div class="grid-10 ofertas-publicadas">
       <div class="grid-3 foto-publicada"><img src="../../assets/Logo.png" /> </div>
       <div class="grid-6 texto-publicado">
-        <span class="titulo-produto">Título do produto</span>
+        <span class="titulo-produto">{{offer.tituloProduto}}</span>
         <div class="descricao-produto">
-          Descrição do produto
+          {{offer.descricaoProduto}}
+        </div>
+        <div class="descricao-produto">
+          {{offer.contato}}
         </div>
       </div>
     </div>
   </div>
-  <div class="grid-12 ofertas">
-    <div class="grid-10 ofertas-publicadas">
-      <div class="grid-3 foto-publicada"><img src="../../assets/Logo.png" /> </div>
-      <div class="grid-6 texto-publicado">
-        <span class="titulo-produto">Título do produto</span>
-        <div class="descricao-produto">
-          Descrição do produto
-        </div>
-      </div>
-    </div>
-  </div>
+
 
 </div>
