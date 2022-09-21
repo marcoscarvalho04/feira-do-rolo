@@ -364,11 +364,6 @@ template {
   position: relative;
 }
 
-.container:after,
-.container:before {
-  content: " ";
-  display: table;
-}
 
 .container:after {
   clear: both;

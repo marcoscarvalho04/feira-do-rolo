@@ -14,8 +14,11 @@
 
 .input{
   margin-left: 1.25em;
-  width: 15em;
+  width: 70%;
   font-family: 'Roboto', Courier, Arial;
+  border: 1px solid #CECECE;
+  height: 3em;
+
 }
 
 .input:hover{
@@ -25,6 +28,10 @@
 .descricao-produto{
   margin-left: 1.3em;
   font-family: 'Roboto', Courier, Arial;
+  resize: none;
+  border: 1px solid #CECECE;
+  width: 69.8%;
+
 }
 
 .descricao-produto:hover{
@@ -49,4 +56,6 @@
   background-color: #04abc1;
 }
 
-
+.text{
+  border: 1px solid #DBCDCD;
+}

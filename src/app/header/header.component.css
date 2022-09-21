@@ -1,9 +1,7 @@
 .header {
   width: 100%;
   background-color: #38E5FC;
-  z-index: 10;
   height: 11.93em;
-
 }
 
 .logo {
@@ -11,13 +9,25 @@
   margin-top: 20px;
 }
 
+.menu-nav{
+  margin-left: 15em;
+}
+
 .menu-nav li {
   text-decoration: none;
   display: inline;
   margin-left: 2.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'Roboto', Courier, Arial;
   color: #817D7D;
+}
+
+.menu-nav li:hover {
+  color: #000;
+}
+
+.menu-nav a{
+  text-decoration: none;
 }
 
 .form-pesquisar {

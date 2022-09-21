@@ -18,6 +18,11 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
     this.offersService.findAll().subscribe(data => {
       this.offers = data
+      this.offers.forEach(m => {
+        m.contato = m.contato.length < 20 ? m.contato :  m.contato.substring(0,17).concat('...')
+        m.descricaoProduto = m.descricaoProduto.length< 20 ? m.descricaoProduto :  m.descricaoProduto.substring(0,17).concat('...')
+        m.tituloProduto = m.tituloProduto.length < 20 ? m.tituloProduto : m.tituloProduto.substring(0,17).concat('...')
+      })
     })
   }
 

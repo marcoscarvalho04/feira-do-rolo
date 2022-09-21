@@ -12,6 +12,10 @@ type ofertaRepository struct {
 	db    *gorm.DB
 }
 
+const (
+	MAX_LENGTH_FIELDS = 200
+)
+
 func newOfertaRepository(db *gorm.DB) *ofertaRepository {
 	return &ofertaRepository{
 		db:    db,
@@ -36,7 +40,7 @@ func (s ofertaRepository) validateAllFields() error {
 	if len(s.Model.Contato) == 0 || len(s.Model.DescricaoProduto) == 0 || len(s.Model.TituloProduto) == 0 {
 		return errors.New("fields: Contato, Descricao ou titulo must not be empty")
 	}
-	if len(s.Model.Contato) > 100 || len(s.Model.DescricaoProduto) > 200 || len(s.Model.TituloProduto) > 200 {
+	if len(s.Model.Contato) > MAX_LENGTH_FIELDS || len(s.Model.DescricaoProduto) > MAX_LENGTH_FIELDS || len(s.Model.TituloProduto) > MAX_LENGTH_FIELDS {
 		return errors.New("fiels: Contato, Descricao ou titulo must not be over 200")
 	}
 	return nil

@@ -1,21 +1,19 @@
-<div class="container ">
-  <form (ngSubmit)="onSubmit()" #offerForm="ngForm">
-    <div class="grid-12 form-cadastrar">
-      <div class="form-group grid-12">
-        <span class="label grid-3">Nome do produto </span>
-        <input type="text grid-9" [(ngModel)]="offer.tituloProduto" name="tituloProduto" class="input" required />
-      </div>
-      <div class="form-group grid-12">
-        <span class="label grid-3">Descrição </span>
-        <textarea class="descricao-produto grid-7" rows="6" size="200" [(ngModel)]="offer.descricaoProduto" name="descricaoProduto"></textarea>
-      </div>
-      <div class="form-group grid-12">
-        <span class="label grid-3">Contato </span>
-        <input type="text grid-9" class="input" [(ngModel)]="offer.contato" name="contato" />
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-confirmar"> Cadastrar </button>
-      </div>
+<form [formGroup]="offerForm" (ngSubmit)="onSubmit()" class="container">
+  <div class="grid-12 form-cadastrar">
+    <div class="form-group grid-12">
+      <label for="tituloProduto" class="label grid-3">Nome do produto </label>
+      <input type="text" [(ngModel)]="offer.tituloProduto" name="tituloProduto" class="input" formControlName="tituloProduto" />
     </div>
-  </form>
-</div>
+    <div class="form-group grid-12">
+      <label for="descricaoProduto" class="label grid-3">Descrição </label>
+      <textarea class="descricao-produto grid-9" rows="6" size="100" [(ngModel)]="offer.descricaoProduto" name="descricaoProduto" formControlName="descricaoProduto"></textarea>
+    </div>
+    <div class="form-group grid-12">
+      <label for="contato" class="label grid-3">Contato </label>
+      <input type="text grid-9" class="input" [(ngModel)]="offer.contato" name="contato" formControlName="contato" />
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-confirmar" [disabled]="!offerForm.valid"> Cadastrar </button>
+    </div>
+  </div>
+</form>
